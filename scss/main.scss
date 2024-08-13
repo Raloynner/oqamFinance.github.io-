@@ -7,21 +7,28 @@
   top: 0;
   z-index: 2;
   padding: 24px 0;
-  transition: 0.3s;
+  transition: 0.2s;
+  background: linear-gradient(103.72deg,#000 0.41%,#063B06 108%);
   @media (max-width: 960px) {
     padding: 16px 0;
-  }
-
-  &.darkHeader {
-    background: $Gradient;
-    padding: 8px 0;
-
+    background: linear-gradient(103.72deg,#000 0.41%,#063B06 114%);
     .header-logo {
       img {
         width: 169px;
         height: 48px;
       }
     }
+  }
+  @media (max-width: 640px) {
+    background: linear-gradient(103.72deg,#000 0.41%,#063B06 120%);
+  }
+  @media (max-width: 370px) {
+    .header {
+      background: linear-gradient(103.72deg,#000 0.41%,#063B06 124%);
+    }
+  }
+  &.darkHeader {
+    background: $Gradient;
   }
 }
 
@@ -34,7 +41,7 @@
   margin-right: auto;
 
   img {
-    transition: 0.3s;
+    transition: 0.2s;
   }
 }
 
@@ -60,6 +67,7 @@
   background-position: center;
   width: 40px;
   height: 40px;
+  cursor: pointer;
   @media (min-width: 960px) {
     display: none;
   }
@@ -132,6 +140,7 @@ outline: none !important;
 
 .mobile-menu-button {
   display: inline-flex;
+  margin-top: 18px;
 }
 
 .banner {
@@ -174,7 +183,7 @@ outline: none !important;
 
   span {
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 52px;
     color: $White;
     @media (max-width: 1200px) {
@@ -410,7 +419,9 @@ outline: none !important;
   border-radius: 20px;
 
   &:hover{
-    background-color: $Green1;
+    .accordion-item-title{
+      background-color: $Green1;
+    }
   }
   &:has(.ui-state-active) {
     background: $Gradient;
@@ -431,6 +442,7 @@ outline: none !important;
   background-image: url("../images/arrow-bot.svg");
   background-position: right  34px center ;
   background-repeat: no-repeat;
+
   @media (max-width: 640px) {
     font-size: 18px;
     font-weight: 500;
@@ -784,17 +796,21 @@ outline: none !important;
 }
 
 .map-animate{
-
+}
+.map-animate-g{
+  animation: fades 1s ;
 }
 .map-animate-path {
   stroke-dasharray: 600;
   stroke-dashoffset: 0;
-  animation: dash 3s linear infinite;
+  animation: dash 3s linear;
+  animation-delay: 1s;
 }
 .map-animate-path-small{
   stroke-dasharray: 600;
   stroke-dashoffset: 0;
-  animation: dash 3s linear infinite;
+  animation: dash 8s linear;
+  animation-delay: 1s;
 }
 @keyframes dash {
   from {
@@ -803,4 +819,23 @@ outline: none !important;
   to {
     stroke-dashoffset: 0;
   }
+}
+@keyframes fades {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #EDEDED;
+}
+body::-webkit-scrollbar-thumb {
+  background: #33CC66;
 }
