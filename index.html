@@ -19,9 +19,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicon/favicon.ico">
   <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+  <link href="fonts/geologica/stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="libs/jquery.modal.min.css">
   <link rel="stylesheet" href="libs/aos.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -43,26 +41,30 @@
         <a class="header-nav-item sliding-link" href="#contacts">Contacts</a>
       </nav>
       <a class="header-button button" href="./">Contact us</a>
-      <div class="header-burger burger-js"></div>
+      <div class="header-burger burger-js">
+        <div id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a class="mobile-menu-nav-item sliding-link" href="#about-us">About</a>
+        <a class="mobile-menu-nav-item sliding-link" href="#services">Services</a>
+        <a class="mobile-menu-nav-item" href="./documents.html">Documents</a>
+        <a class="mobile-menu-nav-item sliding-link" href="#contacts">Contacts</a>
+      </nav>
+      <a class="mobile-menu-button button" href="./">Contact us</a>
     </div>
   </div>
 </header>
 
-<div class="mobile-menu">
-  <div class="mobile-menu-head">
-    <a href="./" class="mobile-menu-logo">
-      <img src="images/logo.svg" alt="" width="143" height="40">
-    </a>
-    <div class="mobile-menu-close"></div>
-  </div>
-  <nav class="mobile-menu-nav">
-    <a class="mobile-menu-nav-item sliding-link" href="#about-us">About</a>
-    <a class="mobile-menu-nav-item sliding-link" href="#services">Services</a>
-    <a class="mobile-menu-nav-item" href="./documents.html">Documents</a>
-    <a class="mobile-menu-nav-item sliding-link" href="#contacts">Contacts</a>
-  </nav>
-  <a class="mobile-menu-button button" href="./">Contact us</a>
-</div>
+
 
 <section class="banner">
   <div class="container">
@@ -70,7 +72,7 @@
       DMA for Professional Clients and private family
       <span>fund with professional external team or personal management</span>
     </h1>
-    <svg style="background-image: url('./images/map-dot.svg')" class="banner-image map-animate" width="1064" height="538" viewBox="0 0 1064 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg style="background-image: url('./images/map-dot.svg')" class="banner-image map-animate" data-aos="fade-in" data-aos-easing="ease" width="1064" height="538" viewBox="0 0 1064 538" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g class="map-animate-g" filter="url(#filter0_d_1256_4665)">
         <path class="map-animate-path-small"  d="M756 138.582C784.298 161.954 845.514 228.476 864 307.582" stroke="#33CC66" stroke-width="2"/>
       </g>
@@ -448,7 +450,7 @@
             <li>B3</li>
             <li>NSE</li>
           </ul>
-          <a href="#modal" rel="modal:open" class="button">See more</a>
+          <a href="#modal" class="button open-modal">See more</a>
         </div>
       </div>
       <div class="accordion-item" data-aos="fade-up" data-aos-easing="ease">
@@ -479,7 +481,7 @@
             <li>B3</li>
             <li>NSE</li>
           </ul>
-          <a href="#modal" rel="modal:open" class="button">See more</a>
+          <a href="#modal" class="button open-modal">See more</a>
         </div>
       </div>
       <div class="accordion-item" data-aos="fade-up" data-aos-easing="ease">
@@ -510,7 +512,7 @@
             <li>B3</li>
             <li>NSE</li>
           </ul>
-          <a href="#modal" rel="modal:open" class="button">See more</a>
+          <a href="#modal" class="button open-modal">See more</a>
         </div>
       </div>
       <div class="accordion-item" data-aos="fade-up" data-aos-easing="ease">
@@ -541,7 +543,7 @@
             <li>B3</li>
             <li>NSE</li>
           </ul>
-          <a href="#modal" rel="modal:open" class="button">See more</a>
+          <a href="#modal" class="button open-modal">See more</a>
         </div>
       </div>
     </div>
@@ -582,7 +584,7 @@
     <p class="copyright-text">oqamfinance © 2024</p>
   </div>
 </section>
-<div id="modal" class="modal">
+<div id="modal"  class="modal">
   <div class="modal-head">
     <h2 class="modal-title">Brokerage Services Description </h2>
     <p class="modal-desc">Our Brokerage Services provide a comprehensive suite of solutions designed to facilitate

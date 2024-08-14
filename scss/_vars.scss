@@ -1,5 +1,5 @@
 * {
-  font-family: "Geologica", sans-serif;
+  font-family: "Geologica Roman", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -99,6 +99,14 @@ body {
   &:hover + .pdf-file-image {
     color: $Green2;
   }
+  &:hover + .pdf-file-image + .pdf-file-info > .pdf-file-size {
+    color: #000000;
+  }
+  &:hover + .pdf-file-image + .pdf-file-info >  .pdf-file-date {
+    color: #000000;
+  }
+
+
 }
 
 .pdf-file-image {
@@ -128,6 +136,8 @@ body {
   font-size: 16px;
   font-weight: 100;
   line-height: 24px;
+  color: #868686;
+  transition: 0.3s;
   @media (max-width: 640px) {
     font-size: 14px;
     font-weight: 100;

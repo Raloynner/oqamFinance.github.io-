@@ -19,9 +19,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicon/favicon.ico">
   <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+  <link href="fonts/geologica/stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="libs/jquery.modal.min.css">
   <link rel="stylesheet" href="libs/aos.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -37,32 +35,34 @@
         <img src="images/logo.svg" alt="" width="205" height="58">
       </a>
       <nav class="header-nav">
-        <a class="header-nav-item" href="./">About</a>
-        <a class="header-nav-item" href="./">Services</a>
+        <a class="header-nav-item" href="./#about-us">About</a>
+        <a class="header-nav-item" href="./#services">Services</a>
         <a class="header-nav-item active" href="./documents.html">Documents</a>
-        <a class="header-nav-item" href="./">Contacts</a>
+        <a class="header-nav-item" href="./#contacts">Contacts</a>
       </nav>
       <a class="header-button button" href="./">Contact us</a>
-      <div class="header-burger burger-js"></div>
+      <div class="header-burger burger-js">
+        <div id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <nav class="mobile-menu-nav">
+        <a class="mobile-menu-nav-item" href="./#about-us">About</a>
+        <a class="mobile-menu-nav-item" href="./#services">Services</a>
+        <a class="mobile-menu-nav-item" href="./documents.html">Documents</a>
+        <a class="mobile-menu-nav-item" href="./#contacts">Contacts</a>
+      </nav>
+      <a class="mobile-menu-button button" href="./">Contact us</a>
     </div>
   </div>
 </header>
-
-<div class="mobile-menu">
-  <div class="mobile-menu-head">
-    <a href="./" class="mobile-menu-logo">
-      <img src="images/logo.svg" alt="" width="143" height="40">
-    </a>
-    <div class="mobile-menu-close"></div>
-  </div>
-  <nav class="mobile-menu-nav">
-    <a class="mobile-menu-nav-item" href="/#about-us">About</a>
-    <a class="mobile-menu-nav-item" href="/#services">Services</a>
-    <a class="mobile-menu-nav-item" href="./documents.html">Documents</a>
-    <a class="mobile-menu-nav-item" href="/#contacts">Contacts</a>
-  </nav>
-  <a class="mobile-menu-button button" href="./">Contact us</a>
-</div>
 
 <section class="documents">
   <div class="container">
