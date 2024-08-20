@@ -7,7 +7,7 @@
   top: 0;
   z-index: 2;
   height: auto;
-  padding: 24px 0;
+  padding: 12px 0;
   background: linear-gradient(103.72deg, #000 0.41%, #063B06 108%);
 
   .container {
@@ -247,9 +247,9 @@
 }
 
 .info {
-  margin: 80px 0;
+  margin: 80px 0 0 0;
   @media (max-width: 960px) {
-    margin: 40px 0;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -315,9 +315,9 @@
 }
 
 .about-us {
-  margin: 80px 0;
+  padding: 80px 0 0 0;
   @media (max-width: 960px) {
-    margin: 40px 0;
+    padding: 40px 0 0 0;
   }
 }
 
@@ -435,15 +435,19 @@
 }
 
 .services {
-  margin: 80px 0;
+  padding: 40px 0 0 0;
   @media (max-width: 640px) {
-    margin: 40px 0;
+    padding: 20px 0 0 0;
   }
 }
 
 .services-title {
   margin-bottom: 40px;
   text-align: center;
+  padding-top: 40px;
+  @media (max-width: 640px) {
+    padding-top: 20px;
+  }
 }
 
 .accordion-item {
@@ -480,7 +484,6 @@
   font-weight: 500;
   line-height: 32px;
   padding: 32px;
-  transition: 0.3s;
   background-image: url("../images/arrow-bot.svg");
   background-position: right 34px center;
   background-repeat: no-repeat;
@@ -680,16 +683,34 @@
   line-height: 24px;
   height: 48px;
   padding: 0 16px;
-  background-repeat: no-repeat;
   outline: none;
   width: 100%;
   background-color: $Gray1;
   border: 0;
   border-radius: 8px;
-  background-position: center right 12px;
-  background-image: url("../images/search.svg");
+  &:focus + .form-button{
+    color: $Green2
+  }
 }
-
+.form-button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  color: #868686;
+  transition: 0.3s;
+  &:hover{
+    color: $Green2
+  }
+}
 .documents-subtitle {
   font-size: 20px;
   font-weight: 500;
@@ -791,7 +812,7 @@ html {
 }
 
 .modal-head {
-  padding: 48px 40px 40px 40px;
+  padding: 48px 32px 40px 32px;
   background-color: $Green1;
 
   .list-title, .list, .list li {
@@ -870,6 +891,7 @@ html {
   font-weight: 500;
   line-height: 26px;
   text-align: left;
+  text-transform: uppercase;
   margin: 40px 0 24px 0;
   @media (max-width: 640px) {
     margin: 24px 0;
@@ -1048,4 +1070,7 @@ body::-webkit-scrollbar-thumb {
       background-color: $Green2;
     }
   }
+}
+.tr-popup{
+  display: none !important;
 }

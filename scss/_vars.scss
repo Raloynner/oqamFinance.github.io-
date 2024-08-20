@@ -99,12 +99,10 @@ body {
   &:hover + .pdf-file-image {
     color: $Green2;
   }
-  &:hover + .pdf-file-image + .pdf-file-info > .pdf-file-size {
-    color: #000000;
+  &:hover + .pdf-file-image + .pdf-file-info > .pdf-file-name {
+    color: $Green2;
   }
-  &:hover + .pdf-file-image + .pdf-file-info >  .pdf-file-date {
-    color: #000000;
-  }
+
 
 
 }
@@ -125,6 +123,7 @@ body {
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 4px;
+  transition: 0.3s;
   @media (max-width: 640px) {
     font-size: 14px;
     font-weight: 500;

@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<header class="header darkHeader">
+<header class="header">
   <div class="container">
     <div class="header-flex">
       <a href="./" class="header-logo">
@@ -40,7 +40,7 @@
         <a class="header-nav-item active" href="./documents.html">Documents</a>
         <a class="header-nav-item" href="./#contacts">Contacts</a>
       </nav>
-      <a class="header-button button" href="./">Contact us</a>
+      <a class="header-button button" href="./#contacts">Contact us</a>
       <div class="header-burger burger-js">
         <div id="burger">
           <span></span>
@@ -59,7 +59,7 @@
         <a class="mobile-menu-nav-item" href="./documents.html">Documents</a>
         <a class="mobile-menu-nav-item" href="./#contacts">Contacts</a>
       </nav>
-      <a class="mobile-menu-button button" href="./">Contact us</a>
+      <a class="mobile-menu-button button" href="./#contacts">Contact us</a>
     </div>
   </div>
 </header>
@@ -70,6 +70,11 @@
     <form action="" class="form" data-aos="fade-up" data-aos-easing="ease">
       <label class="form-label">
         <input class="form-input" placeholder="Search" type="text">
+        <button class="form-button" type="submit">
+          <svg width="24" height="24">
+            <use xlink:href="images/pdf.svg#search"></use>
+          </svg>
+        </button>
       </label>
     </form>
     <div class="documents-wrapper" data-aos="fade-up" data-aos-easing="ease">

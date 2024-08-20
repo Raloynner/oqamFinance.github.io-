@@ -52,10 +52,6 @@ $(function () {
     easing: 'ease-out-back',
     duration: 1000
   });
-  $(".open-modal").click(function (e) {
-    $("#modal").modal({
-      fadeDuration: 300
-    });
-  });
+
 });
 
